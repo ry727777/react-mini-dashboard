@@ -1,0 +1,27 @@
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar-item {
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s, padding-left 0.3s;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #e9ecef;
+    padding-left: 16px;
+  }
+  
+  .sidebar-item.active {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  

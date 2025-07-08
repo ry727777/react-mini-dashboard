@@ -1,11 +1,8 @@
-import './App.css';
+import React from 'react';
+import Dashboard from './pages/Dashboard';
 
-function App() {
-  return (
-    <div>
-      Hello mini dashboard
-    </div>
-  );
-}
+const App = () => {
+  return <Dashboard />;
+};
 
 export default App;
