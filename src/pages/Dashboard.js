@@ -1,6 +1,5 @@
 import React from 'react';
 import DashboardLayout from '../layouts/DashboardLayout';
-import StatCard from '../components/StatCard';
 import "./Dashboard.css"
 import { useEffect, useState } from 'react';
 
