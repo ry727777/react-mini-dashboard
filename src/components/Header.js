@@ -3,7 +3,7 @@ import avatar from '../assets/avatar.png';
 import './Header.css';
 
 
-const Header = () => {
+const Header = ({onSearch}) => {
   return (
     <header className='header-container'>
       <div className='header-left'>
@@ -13,7 +13,11 @@ const Header = () => {
 
       <div className='header-middle'>
         {/* Middle: Search bar */}
-        <input type="text" placeholder="Search..." />
+        <input 
+        type="text"
+        placeholder="Search by username..."
+        onChange={(e) => onSearch(e.target.value)}
+         />
       </div>
 
         <div className='header-right'>
