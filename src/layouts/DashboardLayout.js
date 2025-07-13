@@ -3,14 +3,13 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import "./DashboardLayout.css"
 
-const DashboardLayout = ({ children }) => {
+const DashboardLayout = ({ children, onSearch }) => {
   return (
     <div className='dasboard-container'>
-      <Header />
+      <Header onSearch={onSearch}/>
 
       <div className='layout-body'>
         <Sidebar />
-        {/* Main content goes here */}
         {children}
       </div>
     </div>
